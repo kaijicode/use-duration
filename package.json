@@ -1,0 +1,37 @@
+{
+  "name": "@kaijicode/use-duration",
+  "version": "0.0.1",
+  "description": "React hook for measuring duration",
+  "source": "src/useDuration.js",
+  "main": "dist/useDuration.js",
+  "module": "dist/useDuration.module.js",
+  "unpkg": "dist/useDuration.umd.js",
+  "scripts": {
+    "start": "parcel ./demo/index.html --out-dir dist-parcel",
+    "test": "cypress open",
+    "components": "parcel ./cypress/index.html --out-dir dist-parcel",
+    "build": "microbundle build --globals react=React",
+    "build:demo": "parcel build --no-minify --out-dir docs --public-url https://kaijicode.github.io/use-duration/ ./demo/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaijicode/use-duration.git"
+  },
+  "keywords": [],
+  "author": "kaijicode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaijicode/use-duration/issues"
+  },
+  "homepage": "https://github.com/kaijicode/use-duration#readme",
+  "devDependencies": {
+    "cypress": "^6.5.0",
+    "microbundle": "^0.13.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
